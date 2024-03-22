@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240322204418">
+	<link rel="shortcut icon" href="img/vite.svg">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-content">
+				<div class="header-leftaera">
+					<div class="logo-info">
+						<a href="/" class="logo_link"><img src="img/logo.svg" alt="logo">
+							<p class="logo_text textlogo">ADMIN</p>
+						</a>
+					</div>
+					<nav class="header-menu menu-header">
+						<ul class="menu-header-list">
+							<li class="menu-header-item"><a href="/">Dashboard</a></li>
+							<li class="menu-header-item"><a href="/">Exchange</a></li>
+							<li class="menu-header-item active"><a href="/partnerspay.html">Partners pay</a></li>
+							<li class="menu-header-item"><a href="/">Coins</a></li>
+							<li class="menu-header-item"><a href="/">Deposit</a></li>
+							<li class="menu-header-item"><a href="/">Node</a></li>
+							<li class="menu-header-item"><a href="/">Trade</a></li>
+							<li class="menu-header-item"><a href="/">Settings</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-rightaera">
+					<div class="logout">Log out</div>
+					<div class="userimg">
+						<img src="img/user.svg" alt="user">
+					</div>
+					<div class="minmenu">
+						<div class="btn-navbar ">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+		</header>
+		<main class="page">
+			<section class="section">
+				<div class="section__container partnery">
+					<div class="partnery__title">
+						<h1 class="partnery__title-text">All payments</h1>
+						<form role="search" method="get" class="search-form" action="#">
+							<label>
+								<span class="screen-reader-text"> </span>
+								<input type="search" class="search-field" placeholder="Пошук …" value="" name=""> </label>
+							<button class="search-submit" type="submit">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">
+									<path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+									</path>
+								</svg>
+							</button>
+						</form>
+						<div class="partnery__per"></div>
+						<button class="button" type="submit">Partner login</button>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="section__container section-maxwidth">
+					<nav class="section__partner partner__list">
+						<ul class="partner__list-ul">
+							<li class="partner__item">
+								<div class="partner__title-block">
+									<div class="partner__title-text">Login</div>
+									<div class="partner__title-text">Data and Time</div>
+									<div class="partner__title-text">BTC Address</div>
+									<div class="partner__title-text">Sum</div>
+									<div class="partner__title-text">Status</div>
+								</div>
+							</li>
+							<li class="partner__item">
+								<div class="partner__item-content">
+									<div class="partner__content">TrocadorApp</div>
+									<div class="partner__content">12.01.2024 18:50</div>
+									<div class="partner__content">bc1qxlresuegp3jd6hf2mtvph3mv06hay95mqe6sjf</div>
+									<div class="partner__content">0.04767</div>
+									<div class="partner__content"><button class="button" type="submit">Payment</button></div>
+								</div>
+							</li>
+							<li class="partner__item">
+								<div class="partner__item-content">
+									<div class="partner__content">TrocadorApp</div>
+									<div class="partner__content">12.01.2024 18:50</div>
+									<div class="partner__content">bc1qxlresuegp3jd6hf2mtvph3mv06hay95mqe6sjf</div>
+									<div class="partner__content">0.04767</div>
+									<div class="partner__content"><button class="button" type="submit">Payment</button></div>
+								</div>
+							</li>
+							<li class="partner__item">
+								<div class="partner__item-content">
+									<div class="partner__content">TrocadorApp</div>
+									<div class="partner__content">12.01.2024 18:50</div>
+									<div class="partner__content">bc1qxlresuegp3jd6hf2mtvph3mv06hay95mqe6sjf</div>
+									<div class="partner__content">0.04767</div>
+									<div class="partner__content"><button class="button canceled" type="submit">Canceled</button></div>
+								</div>
+							</li>
+							<li class="partner__item">
+								<div class="partner__item-content">
+									<div class="partner__content">TrocadorApp</div>
+									<div class="partner__content">12.01.2024 18:50</div>
+									<div class="partner__content">bc1qxlresuegp3jd6hf2mtvph3mv06hay95mqe6sjf</div>
+									<div class="partner__content">0.04767</div>
+									<div class="partner__content"><button class="button" type="submit">Payment</button></div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script defer src="js/app.min.js?_v=20240322204418"></script>
+</body>
+
+</html>
