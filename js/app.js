@@ -16642,6 +16642,60 @@
         contetn[i].classList.add("active");
         poapopen[i].classList.add("active");
     };
+    const buttononselectcoin = document.querySelector(".buttononselectcoin");
+    const tradeMaskSelect = document.querySelector(".trade-mask-select");
+    if (buttononselectcoin) buttononselectcoin.onclick = function() {
+        tradeMaskSelect.classList.toggle("display-none");
+    };
+    var myChart = echarts.init(document.getElementById("biggraff"));
+    window.addEventListener("resize", (function() {
+        myChart.resize();
+    }));
+    var script_option = {
+        title: {},
+        tooltip: {},
+        legend: {},
+        xAxis: {
+            data: [ "2023-2", "2023-4", "2023-6", "2023-8", "2023-10", "2023-12", "2024-2", "2024-4", "2024-6" ]
+        },
+        yAxis: {},
+        series: [ {
+            type: "bar",
+            data: [ 1600, 820, 1536, 1310, 1e3, 720, 500, 510, 800 ]
+        }, {
+            data: [ 1e3, 400, 300, 1550, 100, 720, 500, 510, 800 ],
+            type: "line",
+            smooth: true
+        } ]
+    };
+    myChart.setOption(script_option);
+    var myChart1 = echarts.init(document.getElementById("main"));
+    var option2 = {
+        tooltip: {},
+        legend: {},
+        xAxis: {
+            data: [ "2023-2", "2023-4", "2023-6", "2023-8", "2023-10", "2023-12", "2024-2", "2024-4", "2024-6" ],
+            show: false
+        },
+        yAxis: {
+            show: false
+        },
+        series: [ {
+            label: {
+                formatter: [ "Label Text" ].join("\n"),
+                backgroundColor: "#eee",
+                borderColor: "#555",
+                fontSize: 18
+            },
+            data: [ 1e3, 400, 300, 1550, 100, 720, 500, 510, 800 ],
+            type: "line",
+            areaStyle: {
+                color: "#26FFE5",
+                opacity: .5
+            }
+        } ]
+    };
+    myChart1.setOption(option2);
     window["FLS"] = true;
     isWebp();
 })();
