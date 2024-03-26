@@ -1,0 +1,11 @@
+<svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 40">
+<g id="Rectangle 49">
+<mask id="path-1-inside-1_161_1319" fill="white">
+<rect x="0.313843" y="4.28174" width="13.0581" height="15.9598" rx="1.45089"/>
+</mask>
+<rect x="0.313843" y="4.28174" width="13.0581" height="15.9598" rx="1.45089" stroke="#00F6D9" stroke-width="4.35268" mask="url(#path-1-inside-1_161_1319)"/>
+</g>
+<path id="Rectangle 50" d="M3.21545 1.37988H14.8226C15.6239 1.37988 16.2735 2.02947 16.2735 2.83078V14.4379" stroke="#00F6D9" stroke-width="1.45089" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240326011704">
+	<link rel="shortcut icon" href="img/vite.svg">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-content">
+				<div class="header-leftaera">
+					<div class="logo-info">
+						<a href="/" class="logo_link"><img src="img/logo.svg" alt="logo">
+							<p class="logo_text textlogo">ADMIN</p>
+						</a>
+					</div>
+					<nav class="header-menu menu-header">
+						<ul class="menu-header-list">
+							<li class="menu-header-item active"><a href="/">Dashboard</a></li>
+							<li class="menu-header-item"><a href="/">Exchange</a></li>
+							<li class="menu-header-item"><a href="/partnerspay.html">Partners pay</a></li>
+							<li class="menu-header-item"><a href="/coin.html">Coins</a></li>
+							<li class="menu-header-item"><a href="/deposit.html">Deposit</a></li>
+							<li class="menu-header-item"><a href="/node.html">Node</a></li>
+							<li class="menu-header-item"><a href="/trade.html">Trade</a></li>
+							<li class="menu-header-item"><a href="/">Settings</a></li>
+							<li class="menu-header-item"><a href="/popapid.html">Popapid</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-rightaera">
+					<div class="logout">Log out</div>
+					<div class="userimg">
+						<img src="img/user.svg" alt="user">
+					</div>
+					<div class="minmenu">
+						<div class="btn-navbar ">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+		</header>
+		<main class="page">
+			<section class="section">
+				<div class="section__container trade-section">
+					<div class="trade-section__title">
+						<div class="trade-section__selectcoin selectcoin-trade">
+							<div class="selectcoin-trade__title buttononselectcoin">
+								<div class="selectcoin-trade__img"><img src="img/coin_img.svg" alt="btg"></div>
+								<div class="selectcoin-trade__title">Bitcoin / BNB</div>
+								<img src="img/buttonup.svg" class="selectcoin-trade__open" alt="btn">
+							</div>
+							<div class="selectcoin-trade__mask trade-mask-select display-none">
+								<div class="selectcoin-trade__content">
+									<form role="search" method="get" class="search-form" action="#">
+										<label>
+											<span class="screen-reader-text"> </span>
+											<input type="search" class="search-field" placeholder="Coin search" value="" name="">
+										</label>
+										<button class="search-submit" type="submit">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">
+												<path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+												</path>
+											</svg>
+										</button>
+									</form>
+									<ul class="selectcoin-trade__list">
+										<li class="selectcoin-trade__item">
+											<div class="selectcoin-trade__img selectcoin-trade--smalliomg"><img src="img/coin_img.svg" alt="btg"></div>
+											<div class="selectcoin-trade__textpar">Ethereum / ETH</div>
+										</li>
+										<li class="selectcoin-trade__item">
+											<div class="selectcoin-trade__img selectcoin-trade--smalliomg"><img src="img/coin_img.svg" alt="btg"></div>
+											<div class="selectcoin-trade__textpar">Ethereum / ETH</div>
+										</li>
+										<li class="selectcoin-trade__item">
+											<div class="selectcoin-trade__img selectcoin-trade--smalliomg"><img src="img/coin_img.svg" alt="btg"></div>
+											<div class="selectcoin-trade__textpar">Ethereum / ETH</div>
+										</li>
+										<li class="selectcoin-trade__item">
+											<div class="selectcoin-trade__img selectcoin-trade--smalliomg"><img src="img/coin_img.svg" alt="btg"></div>
+											<div class="selectcoin-trade__textpar">Ethereum / ETH</div>
+										</li>
+										<li class="selectcoin-trade__item">
+											<div class="selectcoin-trade__img selectcoin-trade--smalliomg"><img src="img/coin_img.svg" alt="btg"></div>
+											<div class="selectcoin-trade__textpar">Ethereum / ETH</div>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="trade-section__info">
+							<div class="trade-section__price">$29,274.74</div>
+							<div class="trade-section__textcontetn"><img src="img/strelkaUp.svg" alt="img">Last Trade Price</div>
+						</div>
+						<div class="partnery__per"></div>
+						<div class="trade-section__info">
+							<div class="trade-section__titletext trade-section--turquoise">+ 0.12%</div>
+							<div class="trade-section__textcontetn">24h Price Change</div>
+						</div>
+						<div class="partnery__per"></div>
+						<div class="trade-section__info">
+							<div class="trade-section__titletext">02:30:42</div>
+							<div class="trade-section__textcontetn">Countdown</div>
+						</div>
+					</div>
+					<div class="trade-section__body">
+						таблиця з траде вів
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="section">
+				<div class="section__container trade-orderform">
+					<div class="trade-orderform__left">
+						<nav class="trade-orderform__title">
+							<ul class="trade-orderform__list">
+								<li class="trade-orderform__item active">Limit</li>
+								<li class="trade-orderform__item">Market</li>
+								<li class="trade-orderform__item">Stop-limit</li>
+							</ul>
+						</nav>
+						<form role="buy" method="get" class="buysell-form active" action="#">
+							<span class="screen-reader-text"> USDT</span>
+							<label>
+								<div class="trade-orderform__inputbefor">Price</div>
+								<input type="text" class="buysell-field" value="66900.36" name="">
+								<div class="trade-orderform__inputafter">USDT</div>
+							</label>
+							<span class="screen-reader-text"> </span>
+							<label>
+								<div class="trade-orderform__inputbefor">Amount</div>
+								<input type="text" class="buysell-field" value="1" name="">
+								<div class="trade-orderform__inputafter">BTC</div>
+							</label>
+							<div class="percentSlider">
+								<div class="square"></div>
+								<div class="square"></div>
+								<div class="square"></div>
+								<div class="square"></div>
+								<div class="square"></div>
+								<div class="squarerule"></div>
+							</div>
+							<div class="trade-orderform__textbs">Max Buy -- BTC</div>
+							<button class="buy-submit " type="submit">Buy BTC</button>
+						</form>
+					</div>
+					<div class="trade-orderform__center">
+						<img src="img/reversoimg.svg" alt="imgrevers">
+					</div>
+					<div class="trade-orderform__right">
+						<nav class="trade-orderform__title">
+
+						</nav>
+						<form role="sell" method="get" class="buysell-form active" action="#">
+							<span class="screen-reader-text"> USDT</span>
+							<label>
+								<div class="trade-orderform__inputbefor">Price</div>
+								<input type="text" class="buysell-field" value="66900.36" name="">
+								<div class="trade-orderform__inputafter">USDT</div>
+							</label>
+							<span class="screen-reader-text"> </span>
+							<label>
+								<div class="trade-orderform__inputbefor">Amount</div>
+								<input type="text" class="buysell-field" value="1" name="">
+								<div class="trade-orderform__inputafter">BTC</div>
+							</label>
+							<div class="percentSlider">
+								<div class="square"></div>
+								<div class="square"></div>
+								<div class="square"></div>
+								<div class="square"></div>
+								<div class="square"></div>
+								<div class="squarerule"></div>
+							</div>
+							<div class="trade-orderform__textbs">Max Sell -- USDT</div>
+							<button class="buy-submit red" type="submit">Sell BTC</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="section">
+				<div class="section__container trade-order">
+					<div class="trade-order__history history-order">
+						<div class="history-order__section">
+							<div class="history-order__title history-order--border-bottom">Order History</div>
+							<nav class="history-order__choice">
+								<ul class="history-order__list">
+									<li class="history-order__item active">Day</li>
+									<li class="history-order__item">Week</li>
+									<li class="history-order__item">Month</li>
+									<li class="history-order__item">3 Month</li>
+									<li class="history-order__item">Time</li>
+									<li class="history-order__item">YYYY-MM-DD to YYYY-MM-DD <img src="img/calendar.svg" alt=""></li>
+								</ul>
+							</nav>
+							<div class="history-order__content">
+								<div class="history-order__title">
+									<ul>
+										<li>Time</li>
+										<li>Pair</li>
+										<li>Type</li>
+										<li>Mode</li>
+										<li>Average price</li>
+										<li>Price</li>
+										<li>Fill</li>
+										<li>Quantity</li>
+										<li>Iceberg order amount</li>
+										<li>Total</li>
+										<li>Activation conditions</li>
+										<li>SOR</li>
+									</ul>
+								</div>
+								<nav class="history-order__mask">
+									<ul class="history-order__list">
+										<li class="history-order__item">
+											<div class="history-order__content">01-13 10:24:25</div>
+											<div class="history-order__content">
+												<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+												XMR/ETH<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+											</div>
+											<div class="history-order__content">Limit</div>
+											<div class="history-order__content">Buy</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">0</div>
+											<div class="history-order__content">1.12058492</div>
+											<div class="history-order__content">--</div>
+											<div class="history-order__content">-</div>
+										</li>
+										<li class="history-order__item">
+											<div class="history-order__content">01-13 10:24:25</div>
+											<div class="history-order__content">
+												<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+												XMR/ETH<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+											</div>
+											<div class="history-order__content">Limit</div>
+											<div class="history-order__content">Buy</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">0</div>
+											<div class="history-order__content">1.12058492</div>
+											<div class="history-order__content">--</div>
+											<div class="history-order__content">-</div>
+										</li>
+										<li class="history-order__item">
+											<div class="history-order__content">01-13 10:24:25</div>
+											<div class="history-order__content">
+												<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+												XMR/ETH<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+											</div>
+											<div class="history-order__content">Limit</div>
+											<div class="history-order__content">Buy</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">0</div>
+											<div class="history-order__content">1.12058492</div>
+											<div class="history-order__content">--</div>
+											<div class="history-order__content">-</div>
+										</li>
+										<li class="history-order__item">
+											<div class="history-order__content">01-13 10:24:25</div>
+											<div class="history-order__content">
+												<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+												XMR/ETH<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+											</div>
+											<div class="history-order__content">Limit</div>
+											<div class="history-order__content">Buy</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">0</div>
+											<div class="history-order__content">1.12058492</div>
+											<div class="history-order__content">--</div>
+											<div class="history-order__content">-</div>
+										</li>
+										<li class="history-order__item">
+											<div class="history-order__content">01-13 10:24:25</div>
+											<div class="history-order__content">
+												<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+												XMR/ETH<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+											</div>
+											<div class="history-order__content">Limit</div>
+											<div class="history-order__content">Buy</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">0</div>
+											<div class="history-order__content">1.12058492</div>
+											<div class="history-order__content">--</div>
+											<div class="history-order__content">-</div>
+										</li>
+										<li class="history-order__item">
+											<div class="history-order__content">01-13 10:24:25</div>
+											<div class="history-order__content">
+												<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+												XMR/ETH<div class="history-order__img"><img src="img/coin_img.svg" alt=""></div>
+											</div>
+											<div class="history-order__content">Limit</div>
+											<div class="history-order__content">Buy</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">0.06062</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">18.484</div>
+											<div class="history-order__content">0</div>
+											<div class="history-order__content">1.12058492</div>
+											<div class="history-order__content">--</div>
+											<div class="history-order__content">-</div>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="trade-order__book book-order">
+						<div class="book-order__title">Order History</div>
+						<nav class="book-order__titlelist">
+							<ul class="book-order__list">
+								<li class="book-order__item">Amount</li>
+								<li class="book-order__item">Price, USDT</li>
+								<li class="book-order__item">Total, USDT</li>
+							</ul>
+						</nav>
+						<nav class="book-order__content">
+							<ul class="book-order__content-list">
+								<li class="book-order__content-item">
+									<div class="book-order__content-item-text">21.00000000</div>
+									<div class="book-order__content-item-text up">$28,137,97</div>
+									<div class="book-order__content-item-text">1875.000000</div>
+								</li>
+								<li class="book-order__content-item">
+									<div class="book-order__content-item-text">21.00000000</div>
+									<div class="book-order__content-item-text down">$28,137,97</div>
+									<div class="book-order__content-item-text">1875.000000</div>
+								</li>
+								<li class="book-order__content-item">
+									<div class="book-order__content-item-text">21.00000000</div>
+									<div class="book-order__content-item-text down">$28,137,97</div>
+									<div class="book-order__content-item-text">1875.000000</div>
+								</li>
+
+								<li class="book-order__content-item">
+									<div class="book-order__content-item-text">21.00000000</div>
+									<div class="book-order__content-item-text down">$28,137,97</div>
+									<div class="book-order__content-item-text">1875.000000</div>
+								</li>
+							</ul>
+						</nav>
+						<button class="book-order__button">View More</button>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script defer src="js/app.min.js?_v=20240326011704"></script>
+</body>
+
+</html>
