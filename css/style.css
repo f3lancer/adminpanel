@@ -3622,6 +3622,87 @@ h3 {
   background: linear-gradient(0deg, rgba(46, 106, 139, 0.4) 0%, rgba(0, 246, 217, 0.4) 91.89%);
 }
 
+.log__container {
+  border-radius: 34px;
+  background: linear-gradient(91deg, #383684 24.43%, #51FFFF 216.11%);
+  width: 687.812px;
+  height: 574.479px;
+  padding: 45px;
+}
+
+.log__logo {
+  height: 67px;
+}
+
+.log__logo img {
+  height: 100%;
+}
+
+.log__form {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.log__text {
+  color: #B4B8FB;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.log__input.login {
+  margin-bottom: 35px;
+}
+
+.log__submit {
+  width: 110px;
+  height: 55px;
+  border-radius: 9px;
+  border: 2px solid #00F6D9;
+  background: #17C1B7;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #154068;
+  font-family: Roboto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 50px;
+}
+
+.log__form .log__input {
+  height: 76px;
+  border-radius: 9px;
+  border: 2px solid #00F6D9;
+  background: -webkit-gradient(linear, left top, right top, from(#00F6D9), color-stop(51.5%, rgba(75, 229, 255, 0.49)), to(rgba(180, 184, 251, 0)));
+  background: linear-gradient(90deg, #00F6D9 0%, rgba(75, 229, 255, 0.49) 51.5%, rgba(180, 184, 251, 0) 100%);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #3E6F9E;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0 23px;
+  width: 100%;
+}
+
 @media (min-width: 1023.99px) {
   .menu-header-list {
     display: -webkit-box;
