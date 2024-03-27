@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240326011704">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240327215056">
 	<link rel="shortcut icon" href="img/vite.svg">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +33,7 @@
 							<li class="menu-header-item"><a href="/trade.html">Trade</a></li>
 							<li class="menu-header-item"><a href="/">Settings</a></li>
 							<li class="menu-header-item"><a href="/popapid.html">Popapid</a></li>
+							<li class="menu-header-item"><a href="/popapcoin.html">Popapcoin</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -116,24 +117,22 @@
 						</div>
 					</div>
 					<div class="trade-section__body">
-						таблиця з траде вів
+
 					</div>
 				</div>
 			</section>
-
-
 
 			<section class="section">
 				<div class="section__container trade-orderform">
 					<div class="trade-orderform__left">
 						<nav class="trade-orderform__title">
 							<ul class="trade-orderform__list">
-								<li class="trade-orderform__item active">Limit</li>
-								<li class="trade-orderform__item">Market</li>
-								<li class="trade-orderform__item">Stop-limit</li>
+								<li class="trade-orderform__item popaplisttrade active">Limit</li>
+								<li class="trade-orderform__item popaplisttrade">Market</li>
+								<li class="trade-orderform__item popaplisttrade">Stop-limit</li>
 							</ul>
 						</nav>
-						<form role="buy" method="get" class="buysell-form active" action="#">
+						<form role="buy" method="get" class="buysell-form left active" action="#">
 							<span class="screen-reader-text"> USDT</span>
 							<label>
 								<div class="trade-orderform__inputbefor">Price</div>
@@ -146,13 +145,77 @@
 								<input type="text" class="buysell-field" value="1" name="">
 								<div class="trade-orderform__inputafter">BTC</div>
 							</label>
-							<div class="percentSlider">
-								<div class="square"></div>
-								<div class="square"></div>
-								<div class="square"></div>
-								<div class="square"></div>
-								<div class="square"></div>
-								<div class="squarerule"></div>
+
+							<div class="slider-range__box">
+								<label class="slider-range__label" for="test">
+									<div class="slider-range__square  "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square  "></div>
+								</label>
+								<input type="range" min="0" max="100" value="0" step="1" class="slider-range__input" id="test">
+								<div class="slider-range__line"></div>
+							</div>
+							<div class="trade-orderform__textbs">Max Buy -- BTC</div>
+							<button class="buy-submit " type="submit">Buy BTC</button>
+						</form>
+						<form role="buy" method="get" class="buysell-form left " action="#">
+							<span class="screen-reader-text"> USDT</span>
+							<label>
+								<div class="trade-orderform__inputbefor">Price</div>
+								<input type="text" class="buysell-field" value="Market" name="">
+								<div class="trade-orderform__inputafter">USDT</div>
+							</label>
+							<span class="screen-reader-text"> </span>
+							<label>
+								<div class="trade-orderform__inputbefor">Amount</div>
+								<input type="text" class="buysell-field" value="1" name="">
+								<div class="trade-orderform__inputafter">BTC</div>
+							</label>
+							<div class="slider-range__box">
+								<label class="slider-range__label" for="test">
+									<div class="slider-range__square  "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square  "></div>
+								</label>
+								<input type="range" min="0" max="100" value="0" step="1" class="slider-range__input" id="test">
+								<div class="slider-range__line"></div>
+							</div>
+							<div class="trade-orderform__textbs">Max Buy -- BTC</div>
+							<button class="buy-submit " type="submit">Buy BTC</button>
+						</form>
+						<form role="buy" method="get" class="buysell-form left " action="#">
+							<span class="screen-reader-text"> USDT</span>
+							<label>
+								<div class="trade-orderform__inputbefor">Stop</div>
+								<input type="text" class="buysell-field" value="66900.36" name="">
+								<div class="trade-orderform__inputafter">USDT</div>
+							</label>
+							<span class="screen-reader-text"> </span>
+							<label>
+								<div class="trade-orderform__inputbefor">Total</div>
+								<input type="text" class="buysell-field" value="1" name="">
+								<div class="trade-orderform__inputafter">BTC</div>
+							</label>
+							<span class="screen-reader-text"> </span>
+							<label>
+								<div class="trade-orderform__inputbefor">Amount</div>
+								<input type="text" class="buysell-field" value="1" name="">
+								<div class="trade-orderform__inputafter">BTC</div>
+							</label>
+							<div class="slider-range__box">
+								<label class="slider-range__label" for="test">
+									<div class="slider-range__square  "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square  "></div>
+								</label>
+								<input type="range" min="0" max="100" value="0" step="1" class="slider-range__input" id="test">
+								<div class="slider-range__line"></div>
 							</div>
 							<div class="trade-orderform__textbs">Max Buy -- BTC</div>
 							<button class="buy-submit " type="submit">Buy BTC</button>
@@ -163,9 +226,8 @@
 					</div>
 					<div class="trade-orderform__right">
 						<nav class="trade-orderform__title">
-
 						</nav>
-						<form role="sell" method="get" class="buysell-form active" action="#">
+						<form role="sell" method="get" class="buysell-form right active" action="#">
 							<span class="screen-reader-text"> USDT</span>
 							<label>
 								<div class="trade-orderform__inputbefor">Price</div>
@@ -178,13 +240,75 @@
 								<input type="text" class="buysell-field" value="1" name="">
 								<div class="trade-orderform__inputafter">BTC</div>
 							</label>
-							<div class="percentSlider">
-								<div class="square"></div>
-								<div class="square"></div>
-								<div class="square"></div>
-								<div class="square"></div>
-								<div class="square"></div>
-								<div class="squarerule"></div>
+							<div class="slider-range__box">
+								<label class="slider-range__label" for="test">
+									<div class="slider-range__square  "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square  "></div>
+								</label>
+								<input type="range" min="0" max="100" value="0" step="1" class="slider-range__input" id="test">
+								<div class="slider-range__line"></div>
+							</div>
+							<div class="trade-orderform__textbs">Max Sell -- USDT</div>
+							<button class="buy-submit red" type="submit">Sell BTC</button>
+						</form>
+						<form role="sell" method="get" class="buysell-form right " action="#">
+							<span class="screen-reader-text"> USDT</span>
+							<label>
+								<div class="trade-orderform__inputbefor">Price</div>
+								<input type="text" class="buysell-field" value="Market " name="">
+								<div class="trade-orderform__inputafter">USDT</div>
+							</label>
+							<span class="screen-reader-text"> </span>
+							<label>
+								<div class="trade-orderform__inputbefor">Amount</div>
+								<input type="text" class="buysell-field" value="1" name="">
+								<div class="trade-orderform__inputafter">BTC</div>
+							</label>
+							<div class="slider-range__box">
+								<label class="slider-range__label" for="test">
+									<div class="slider-range__square  "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square  "></div>
+								</label>
+								<input type="range" min="0" max="100" value="0" step="1" class="slider-range__input" id="test">
+								<div class="slider-range__line"></div>
+							</div>
+							<div class="trade-orderform__textbs">Max Sell -- USDT</div>
+							<button class="buy-submit red" type="submit">Sell BTC</button>
+						</form>
+						<form role="sell" method="get" class="buysell-form right " action="#">
+							<span class="screen-reader-text"> USDT</span>
+							<label>
+								<div class="trade-orderform__inputbefor">Stop</div>
+								<input type="text" class="buysell-field" value="" name="">
+								<div class="trade-orderform__inputafter">USDT</div>
+							</label>
+							<span class="screen-reader-text"> </span>
+							<label>
+								<div class="trade-orderform__inputbefor">Limit</div>
+								<input type="text" class="buysell-field" value="1" name="">
+								<div class="trade-orderform__inputafter">BTC</div>
+							</label><span class="screen-reader-text"> </span>
+							<label>
+								<div class="trade-orderform__inputbefor">Amount</div>
+								<input type="text" class="buysell-field" value="1" name="">
+								<div class="trade-orderform__inputafter">BTC</div>
+							</label>
+							<div class="slider-range__box">
+								<label class="slider-range__label" for="test">
+									<div class="slider-range__square  "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square "></div>
+									<div class="slider-range__square  "></div>
+								</label>
+								<input type="range" min="0" max="100" value="0" step="1" class="slider-range__input" id="test">
+								<div class="slider-range__line"></div>
 							</div>
 							<div class="trade-orderform__textbs">Max Sell -- USDT</div>
 							<button class="buy-submit red" type="submit">Sell BTC</button>
@@ -207,7 +331,8 @@
 									<li class="history-order__item">Month</li>
 									<li class="history-order__item">3 Month</li>
 									<li class="history-order__item">Time</li>
-									<li class="history-order__item">YYYY-MM-DD to YYYY-MM-DD <img src="img/calendar.svg" alt=""></li>
+									<li class="history-order__item">YYYY-MM-DD to YYYY-MM-DD <img src="img/calendar.svg" alt="">
+									</li>
 								</ul>
 							</nav>
 							<div class="history-order__content">
@@ -374,15 +499,13 @@
 					</div>
 				</div>
 			</section>
-
-
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script defer src="js/app.min.js?_v=20240326011704"></script>
+	<script defer src="js/app.min.js?_v=20240327215056"></script>
 </body>
 
 </html>
