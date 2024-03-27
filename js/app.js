@@ -33,8 +33,6 @@
     }));
     const poapopen = document.querySelectorAll(".idc__popapon");
     const contetn = document.querySelectorAll(".idc__popapcontent");
-    console.log(poapopen);
-    console.log(contetn);
     for (let i = 0; i < poapopen.length; i++) poapopen[i].onclick = function() {
         for (let v = 0; v < contetn.length; v++) {
             contetn[v].classList.remove("active");
@@ -48,55 +46,33 @@
     if (buttononselectcoin) buttononselectcoin.onclick = function() {
         tradeMaskSelect.classList.toggle("display-none");
     };
-    var myChart = echarts.init(document.getElementById("biggraff"));
-    window.addEventListener("resize", (function() {
-        myChart.resize();
+    let popaplisttrade = document.querySelectorAll(".popaplisttrade");
+    let buysellForml = document.querySelectorAll(".buysell-form.left");
+    let buysellFormr = document.querySelectorAll(".buysell-form.right");
+    for (let i = 0; i < popaplisttrade.length; i++) popaplisttrade[i].onclick = function() {
+        for (let v = 0; v < popaplisttrade.length; v++) {
+            popaplisttrade[v].classList.remove("active");
+            buysellForml[v].classList.remove("active");
+            buysellFormr[v].classList.remove("active");
+        }
+        popaplisttrade[i].classList.add("active");
+        buysellForml[i].classList.add("active");
+        buysellFormr[i].classList.add("active");
+    };
+    const percentSlider = document.querySelectorAll(".slider-range__input");
+    document.querySelectorAll(".trade-section__titletext");
+    console.log(percentSlider);
+    for (let i = 0; i < percentSlider.length; i++) percentSlider[i].addEventListener("input", (event => {
+        let childsquare = percentSlider[i].parentNode.firstElementChild.children;
+        let widthline = document.querySelectorAll(".slider-range__line")[i];
+        let pricent = event.target.value;
+        if (pricent >= 1) childsquare[0].classList.add("active"); else childsquare[0].classList.remove("active");
+        if (pricent >= 26) childsquare[1].classList.add("active"); else childsquare[1].classList.remove("active");
+        if (pricent >= 51) childsquare[2].classList.add("active"); else childsquare[2].classList.remove("active");
+        if (pricent >= 76) childsquare[3].classList.add("active"); else childsquare[3].classList.remove("active");
+        widthline.style.width = `${pricent}%`;
+        console.log(event.target.value);
     }));
-    var script_option = {
-        title: {},
-        tooltip: {},
-        legend: {},
-        xAxis: {
-            data: [ "2023-2", "2023-4", "2023-6", "2023-8", "2023-10", "2023-12", "2024-2", "2024-4", "2024-6" ]
-        },
-        yAxis: {},
-        series: [ {
-            type: "bar",
-            data: [ 1600, 820, 1536, 1310, 1e3, 720, 500, 510, 800 ]
-        }, {
-            data: [ 1e3, 400, 300, 1550, 100, 720, 500, 510, 800 ],
-            type: "line",
-            smooth: true
-        } ]
-    };
-    myChart.setOption(script_option);
-    var myChart1 = echarts.init(document.getElementById("main"));
-    var option2 = {
-        tooltip: {},
-        legend: {},
-        xAxis: {
-            data: [ "2023-2", "2023-4", "2023-6", "2023-8", "2023-10", "2023-12", "2024-2", "2024-4", "2024-6" ],
-            show: false
-        },
-        yAxis: {
-            show: false
-        },
-        series: [ {
-            label: {
-                formatter: [ "Label Text" ].join("\n"),
-                backgroundColor: "#eee",
-                borderColor: "#555",
-                fontSize: 18
-            },
-            data: [ 1e3, 400, 300, 1550, 100, 720, 500, 510, 800 ],
-            type: "line",
-            areaStyle: {
-                color: "#26FFE5",
-                opacity: .5
-            }
-        } ]
-    };
-    myChart1.setOption(option2);
     window["FLS"] = true;
     isWebp();
 })();
